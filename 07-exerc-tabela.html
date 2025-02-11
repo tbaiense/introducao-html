@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas coloridas</title>
+    <style>
+        body {
+            background-color: hsl(150, 100%, 60%)
+        }
+        table {
+            font-size: 2em;
+        }
+        
+        th, td {
+            padding: 5px 20px;
+        }
+        .azul {
+            background-color: blue;
+            color: white;
+        }
+
+        .vermelho {
+            background-color: red;
+            color: white;
+        }
+
+        .laranja {
+            background-color: orange;
+        }
+
+        .marrom {
+            background-color: brown;
+            color: white;
+        }
+
+        .verde {
+            background-color: green;
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: cyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <caption>Uma tabela colorida</caption>
+    <table border="2px">
+        <thead>
+            <tr>
+                <th>Frutas</th>
+                <th>Verduras</th>
+                <th>Grãos</th>
+                <th>...</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="laranja">Maçã</td>
+                <td class="verde">Alface</td>
+                <td class="azul">Arroz</td>
+                <td class="vermelho" rowspan="3">3 linhas</td>
+            </tr>
+            <tr>
+                <td class="vermelho">Laranja</td>
+                <td class="marrom">Beterraba</td>
+                <td class="laranja">Trigo</td>
+            </tr>
+            <tr>
+                <td class="azul" colspan="3">3 Colunas</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

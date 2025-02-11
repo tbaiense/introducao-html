@@ -1,0 +1,13 @@
+/* Estilizando a caixa */
+.container {
+    background-color: green;
+}
+
+.inner {
+    color: white;
+    font-weight: bold;
+}
+
+.container img {
+    transform: translate(100px, 100px) scale(0.6);
+}
